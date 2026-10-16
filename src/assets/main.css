@@ -1,0 +1,83 @@
+@import './base.css';
+
+:root {
+  --bg-main: #eef6ff;
+  --bg-card: #ffffff;
+  --bg-soft: #f6faff;
+  --bg-tag: #edf5ff;
+  --border: #dfeeff;
+  --text-main: #000000;
+  --text-sub: #1f1f1f;
+  --text-strong: #000000;
+  --text-muted: #4d4d4d;
+  --button-start: #62a5ff;
+  --button-end: #4a7ef0;
+  --button-text: #ffffff;
+  --hint-bg: #eafaf0;
+  --hint-text: #2d7a4f;
+  --shadow: rgba(74, 107, 170, 0.15);
+}
+
+body.theme-light {
+  --bg-main: #eef6ff;
+  --bg-card: #ffffff;
+  --bg-soft: #f6faff;
+  --bg-tag: #edf5ff;
+  --border: #dfeeff;
+  --text-main: #000000;
+  --text-sub: #1f1f1f;
+  --text-strong: #000000;
+  --text-muted: #4d4d4d;
+  --button-start: #62a5ff;
+  --button-end: #4a7ef0;
+  --button-text: #ffffff;
+  --hint-bg: #eafaf0;
+  --hint-text: #2d7a4f;
+  --shadow: rgba(74, 107, 170, 0.15);
+}
+
+body.theme-dark {
+  --bg-main: #000000;
+  --bg-card: #111111;
+  --bg-soft: #1b1b1b;
+  --bg-tag: #272727;
+  --border: #2d2d2d;
+  --text-main: #ffffff;
+  --text-sub: #f3f3f3;
+  --text-strong: #ffffff;
+  --text-muted: #e6ecf5;
+  --button-start: #4b4b4b;
+  --button-end: #1e1e1e;
+  --button-text: #ffffff;
+  --hint-bg: #204a38;
+  --hint-text: #b6f1cf;
+  --shadow: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#app {
+  min-height: 100vh;
+}
